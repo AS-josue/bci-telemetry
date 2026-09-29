@@ -1,0 +1,12 @@
+# Environnements virtuels
+venv/
+env/
+
+# Données et téléchargements MOABB
+data/
+mne_data/
+
+# Fichiers temporaires Python et Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

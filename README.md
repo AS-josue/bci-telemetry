@@ -18,6 +18,12 @@ Le pipeline est spécifiquement optimisé pour une **exécution 100% locale sur 
 5. **Ancrage Supervisé :** Évaluation des experts sur les tout premiers essais de la session cible (Tour d'installation).
 6. **Décodage (Ensemble Learning) :** Vote majoritaire d'un comité restreint (Top-K experts) pour décoder le reste des signaux en temps réel.
 
+### Visualisation de la Complexité des Signaux (Sujet 1)
+Pour bien appréhender le défi technique, la figure ci-dessous (générée lors de l'étape d'extraction par `data_loader.py`) illustre la superposition intra et inter-classe des signaux cérébraux bruts. On y observe clairement le chevauchement des distributions, rendant indispensable l'utilisation de l'espace Riemannien pour espérer séparer ces classes de manière robuste.
+
+![Superposition des signaux EEG intra/inter-classe - Sujet 1](../media/comparison_graph.jpg)
+*Figure 1 : Visualisation de la variance des signaux cérébraux (Sujet 1) mettant en évidence la difficulté de séparation géométrique.*
+
 ## Résultats Actuels & Observations
 Au fil du développement, le pipeline a été confronté à la réalité imprévisible des signaux EEG, menant aux conclusions suivantes :
 
